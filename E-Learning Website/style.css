@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Varela+Round&display=swap");
+
+* {
+  text-decoration: none;
+}
+
+.container {
+  margin: 2rem 6rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px lightskyblue;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+
+  padding-right: 3rem;
+  border-bottom: 0.1rem solid black;
+}
+
+section {
+  padding: 2rem 7rem;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  color: rgb(198, 86, 198);
+  font-weight: bold;
+}
+
+header span {
+  font-size: 2.5rem;
+  color: red;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
+
+header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  color: blue;
+  position: relative;
+  font-weight: bold;
+}
+
+header .navbar a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  background: #ff004f;
+  position: absolute;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+header .navbar :hover::after {
+  width: 100%;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 13rem;
+  font-family: "Varela Round", sans-serif;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.footer .box-container .box p {
+  font-size: 1.2rem;
+  color: black;
+  padding: 0.7rem 0;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.7rem 0;
+}
+
+.footer .box-container .box a:hover {
+  color: red;
+}
+
+.footer .box-container .box p i {
+  padding-right: 1.5rem;
+  color: green;
+}
+
+.footer .credit {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  border-top: 0.1px solid black;
+  padding-top: 2rem;
+}
+
+.footer .credit span {
+  color: pink;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+  text-align: right;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content h3 {
+  font-size: 2.5rem;
+  background-clip: text;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: purple;
+  font-weight: bold;
+}
+
+.home .content p {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: #666;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 5rem;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  background: rgb(188, 244, 104);
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 20%;
+}
+
+.btn:hover {
+  color: white;
+  background: green;
+}
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.course .box {
+  flex: 1 1 25rem;
+  border-radius: 0.5rem;
+  border: 3px solid rgb(204, 201, 201);
+  padding: 1rem;
+  gap: 4.5rem;
+}
+
+.course .box img {
+  height: 20rem;
+  width: 100%;
+}
+
+.course .box .amount {
+  position: absolute;
+
+  font-size: 2rem;
+  background: black;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  padding: 0.1rem 0.1rem;
+}
+
+.course .box .stars i {
+  color: rgb(255, 213, 0);
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.course .box h3 {
+  color: rgb(227, 49, 227);
+  font-size: 2.5rem;
+  font-family: "Varela Round", sans-serif;
+}
+
+.course .box p {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.course .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.price .box {
+  flex: 1 1 30rem;
+  text-align: center;
+  border: 3px solid rgb(177, 175, 175);
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.price .box ul {
+  list-style: none;
+
+  padding: 1rem 0;
+  color: black;
+}
+
+.price .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 1.5rem 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+.price .box .amount {
+  font-size: 4rem;
+  padding: 1rem 0;
+  background: lightblue;
+  font-weight: bold;
+}
+
+.price .box .amount span {
+  font-size: 2rem;
+}
+
+.price .box ul li {
+  padding: 0.7rem 0;
+  font-size: 1.7rem;
+  color: grey;
+  font-family: "Varela Round", sans-serif;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box {
+  border-radius: 0.5rem;
+  border: 3px solid rgb(181, 178, 178);
+  padding: 1rem;
+  flex: 1 1 30rem;
+}
+
+.review .box .student {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review .box .student .student-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.review .box .student .student-info h3 {
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+  color: black;
+}
+
+.review .box .student .student-info span {
+  font-size: 1.7rem;
+  font-family: "Varela Round", sans-serif;
+  color: orange;
+}
+
+.review .box .text {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contact form {
+  flex: 1 1 10rem;
+  border: 0.1rem solid rgb(167, 163, 163);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.contact form .inputBox {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form .box,
+.contact form textarea {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  border: 3px solid rgb(220, 217, 217);
+  border-radius: 0.5rem;
+}
+
+.contact form .inputBox input:focus,
+.contact form .box:focus,
+.contact form textarea:focus {
+  border-color: black;
+}
+
+.send-btn {
+  margin-left: 27rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+#menu .navbar a {
+  color: blue;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+}
+
+.heading-logo {
+  display: flex;
+}
+
+.heading-logo span {
+  margin-left: 0;
+  margin-top: 2rem;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 1.5rem;
+  }
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
