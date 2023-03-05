@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Document</title>
+  </head>
+  <body class="login-body">
+    <div class="container">
+      <form class="form" id="login">
+        <h1 class="form-title">Login</h1>
+
+        <!-- email -->
+        <div class="form-input-group">
+          <input
+            type="email"
+            class="form-input userEmail"
+            autofocus
+            placeholder="Username or email"
+          />
+        </div>
+        <!-- password  -->
+        <div class="form-input-group">
+          <input
+            type="password"
+            class="form-input userPassword"
+            placeholder="Password"
+          />
+        </div>
+        <!-- login button  -->
+
+        <button type="submit" class="form-btn login-btn">Continue</button>
+
+        <!-- forgot password  -->
+        <p class="form-text">
+          <a href="#" class="form-link">Forgot your password?</a>
+        </p>
+
+        <!-- creating account  -->
+        <p class="form-text">
+          <a class="form-link" href="#" id="linkCreateAccount" class="form-link"
+            >Don't have an account? Create account</a
+          >
+        </p>
+      </form>
+      <!-- Sign Up page -->
+      <form class="form form-hidden" id="createAccount">
+        <h1 class="form-title">Create Account</h1>
+
+        <!-- email -->
+        <div class="form-input-group">
+          <input
+            type="email"
+            class="form-input email"
+            autofocus
+            placeholder="Email Address"
+          />
+        </div>
+        <!-- password  -->
+        <div class="form-input-group">
+          <input
+            type="password"
+            class="form-input password"
+            placeholder="Password"
+          />
+        </div>
+        <!-- confirm password  -->
+        <div class="form-input-group">
+          <input
+            type="password"
+            class="form-input confirmPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <!-- login button  -->
+        <button type="submit" class="form-btn signup-btn">Continue</button>
+
+        <!-- Sign Up  -->
+        <p class="form-text">
+          <a class="form-link" href="#" id="linkLogin" class="form-link"
+            >Already have an account? Sign In</a
+          >
+        </p>
+      </form>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>
